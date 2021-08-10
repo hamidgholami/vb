@@ -12,7 +12,7 @@ Vagrant.configure("2") do |config|
             vb.cpus = 1
     end
     
-    config.vm.network "private_network", ip: "192.168.56.150" #, :name => 'VirtualBox Host-Only Ethernet Adapter', :adapter => 2
+    config.vm.network "private_network", ip: "192.168.56.151" #, :name => 'VirtualBox Host-Only Ethernet Adapter', :adapter => 2
  
     config.vm.synced_folder '.', '/vagrant', type: 'rsync', disabled: true
     config.vm.synced_folder '.', '/vagrant', disabled: true
